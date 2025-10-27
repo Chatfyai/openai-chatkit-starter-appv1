@@ -111,3 +111,20 @@ button {
 html {
   scroll-behavior: smooth;
 }
+
+/* Classes customizadas para a interface Mari */
+.text-brand-green {
+  color: #22c55e;
+}
+
+.shadow-input {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.font-poppins {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
