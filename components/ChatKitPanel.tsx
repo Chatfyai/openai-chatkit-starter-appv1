@@ -8,6 +8,7 @@ import {
   GREETING,
   CREATE_SESSION_ENDPOINT,
   WORKFLOW_ID,
+  DOMAIN_KEY,
   getThemeConfig,
 } from "@/lib/config";
 import { ErrorOverlay } from "./ErrorOverlay";
@@ -263,6 +264,7 @@ export function ChatKitPanel({
 
   const chatkit = useChatKit({
     api: { getClientSecret },
+    domainKey: DOMAIN_KEY || undefined,
     theme: {
       colorScheme: theme,
       ...getThemeConfig(theme),

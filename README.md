@@ -58,7 +58,30 @@ Visit `http://localhost:3000` and start chatting. Use the prompts on the start s
 npm run build
 ```
 
-Before deploying your app, you need to verify the domain by adding it to the [Domain allowlist](https://platform.openai.com/settings/organization/security/domain-allowlist) on your dashboard.
+#### Deploy no Vercel (Recomendado)
+
+O projeto está configurado para deploy imediato no Vercel:
+
+1. **Conecte seu repositório**: Acesse [vercel.com](https://vercel.com) e conecte este repositório
+2. **Configure as variáveis de ambiente**:
+   - `NEXT_PUBLIC_CHATKIT_WORKFLOW_ID`: Seu Workflow ID (wf_...)
+   - `OPENAI_API_KEY`: Sua chave da API OpenAI
+   - `NEXT_PUBLIC_CHATKIT_DOMAIN_KEY`: Chave de domínio para verificação (opcional, mas recomendado)
+   - `CHATKIT_API_BASE`: https://api.openai.com (opcional)
+3. **Faça o deploy**: Clique em "Deploy"
+4. **Verifique o domínio**: Adicione o domínio à [Domain allowlist](https://platform.openai.com/settings/organization/security/domain-allowlist)
+
+Para instruções detalhadas, consulte [DEPLOY.md](DEPLOY.md)
+
+#### Outras plataformas
+
+Você também pode fazer deploy em outras plataformas que suportam Next.js:
+- Netlify
+- Railway
+- Render
+- AWS Amplify
+
+Importante: Antes de fazer deploy em qualquer plataforma, adicione o domínio à [Domain allowlist](https://platform.openai.com/settings/organization/security/domain-allowlist).
 
 ## Customization Tips
 
